@@ -19,11 +19,14 @@ As well as useful links to learn more */
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
+  --color: blue; /* this adds to the color mix of --ink but effect is still practically not visible */
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --link-space: clamp(3px, 3px + 1vw, 8px); /* Adds less padding to our link space */
   --line: 1px solid;
-  --container: 800px; /* Makes the main area more narrow */
+  --container: 800px; /* Makes the main area more narrow and compact */
+  --footer-bg: oklch(15 0 0); 
+  --footer-border: color-mix(in oklab, var(--color) 5%, black);
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -57,7 +60,10 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
   text-align: center;
+  background: var(--footer-bg);
+  border-top: 1px solid var(--footer-border);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.

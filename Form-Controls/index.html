@@ -13,15 +13,72 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
         <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+          FORM REQUIREMENTS:
+    
+          1. Name (required)
+             Must be a text string of 2 characters or more
+             Associated label
+          
+          2. Email (required)
+             Must be a valid email address
+             Associated label
+             
+          3. T-Shirt Size (required)
+             Provide 6 size options
+             Can only select one size
+             Associated label
+
+          4. T-shirt color (required)
+             Provide 3 color options
+             Can only select 1 color
+             Associated label
+          
+          All fields are required. *
+        -->
+        <p>
+          <small>Please fill out all required fields (<span aria-label="required">*</span>) to order your t-shirt.</small>
+        </p>
+        <p>
+          <label for="name">Customer Name <span aria-label="required">*</span></label>
+          <input type="text" id="name" name="Customer Name" value="" required minlength="2" size="50">
+        </p>
+        <p>
+          <label for="email">Email Address <span aria-label="required">*</span></label>
+          <input type="email" id="email" name="email" required size="51">
+        </p>
+        <p>
+          <label for="size">Size <span aria-label="required">*</span></label>
+          <select id="size" name="size" required>
+            <option value="" disabled selected>Select</option> <!-- prints text inside your dropdown menu for better UI -->
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          
+        <p>
+          <fieldset>
+          <legend>Select T-shirt color</legend>
+            <label for="color options">Color options <span aria-label="required">*</span></label>
+    
+            <input type="radio" id="color_black" name="color" value="black" required>
+            <label for="color_black">Black</label>
+
+            <input type="radio" id="color_red" name="color" value="red">
+            <label for="color_red">Red</label>
+
+            <input type="radio" id="color_white" name="color" value="white">
+            <label for="color_white">White</label>
+          </fieldset>
+        </p>
+      <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Benjamin Vanderzeypen</h2>
     </footer>
   </body>
 </html>

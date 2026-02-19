@@ -4,10 +4,10 @@
 
 <!--{{<objectives>}}>-->
 
-- [ ] Interpret requirements and check against a list of criteria
-- [ ] Write a valid form
-- [ ] Test with Devtools
-- [ ] Refactor using Devtools
+- [x] Interpret requirements and check against a list of criteria
+- [x] Write a valid form
+- [x] Test with Devtools
+- [x] Refactor using Devtools
 <!--{{<objectives>}}>-->
 
 ## Task
@@ -20,7 +20,8 @@ Writing that out as a series of questions to ask yourself:
 
 1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
 2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
-3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours? 
+........You mean color duplicates, to not select two colors i guess?
 4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
 
 All fields are required.
@@ -30,18 +31,18 @@ Do not write a form action for this project.
 
 Let's write out our testable criteria. Check each one off as you complete it.
 
-- [ ] I have used HTML only.
+- [x] I have used HTML only.
 - [x] I have not used any CSS or JavaScript.
 
 ### HTML
 
-- [ ] My form is semantic html.
-- [ ] All inputs have associated labels.
-- [ ] My Lighthouse Accessibility score is 100.
-- [ ] I require a valid name. I have defined a valid name as a text string of two characters or more.
-- [ ] I require a valid email.
-- [ ] I require one colour from a defined set of 3 colours.
-- [ ] I require one size from a defined set of 6 sizes.
+- [x] My form is semantic html.
+- [x] All inputs have associated labels.
+- [x] My Lighthouse Accessibility score is 100.
+- [x] I require a valid name. I have defined a valid name as a text string of two characters or more.
+- [x] I require a valid email.
+- [x] I require one colour from a defined set of 3 colours.
+- [x] I require one size from a defined set of 6 sizes.
 
 ## Resources
 

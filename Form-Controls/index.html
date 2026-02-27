@@ -13,18 +13,18 @@
     </header>
     <main>
       <form>
-        <p>
+        <div>
           <small>Please fill out all required fields (<span aria-label="required">*</span>) to order your t-shirt.</small> <!-- I learned about using aria-label for accessibility through extra research beyond the course materials. -->
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="name">Customer Name <span aria-label="required">*</span></label>
           <input type="text" id="name" name="Customer Name" value="" required minlength="2" size="50">
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="email">Email Address <span aria-label="required">*</span></label>
           <input type="email" id="email" name="email" required size="51">
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="size">Size <span aria-label="required">*</span></label>
           <select id="size" name="size" required>
             <option value="" disabled selected>Select</option> <!-- prints text inside your dropdown menu for better UI -->
@@ -34,9 +34,9 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
-          </select>
-          
-        <p>
+          </select> 
+        </div>
+        <div>
           <fieldset>
           <legend>Select T-shirt color</legend>
             <label for="color options">Color options <span aria-label="required">*</span></label>
@@ -50,7 +50,7 @@
             <input type="radio" id="color_white" name="color" value="white">
             <label for="color_white">White</label>
           </fieldset>
-        </p>
+        </div>
       <button type="submit">Submit</button>
       </form>
     </main>

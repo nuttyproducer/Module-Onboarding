@@ -17,8 +17,8 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: oklch(7 0 0); /* Pure black, matching --paper's lightness value */  --color: blue; /* this adds to the color mix of --ink */
+  --paper: oklch(97 0 0);  /* Light/white background */  
+  --ink: oklch(7 0 0); /* Pure black, matching --paper's lightness value */  
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --link-space: clamp(3px, 3px + 1vw, 8px); /* Adds less padding to our link space */

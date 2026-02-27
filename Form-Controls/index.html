@@ -14,18 +14,18 @@
     <main>
       <form>
         <div>
-          <small>Please fill out all required fields (<span aria-label="required">*</span>) to order your t-shirt.</small> <!-- I learned about using aria-label for accessibility through extra research beyond the course materials. -->
+          <small>Please fill out all required fields (<span aria-hidden="true">*</span>) to order your t-shirt.</small> <!-- I learned about using aria-label for accessibility through extra research beyond the course materials. -->
         </div>
         <div>
-          <label for="name">Customer Name <span aria-label="required">*</span></label>
+          <label for="name">Customer Name <span aria-hidden="true">*</span></label>
           <input type="text" id="name" name="Customer Name" value="" required minlength="2" size="50">
         </div>
         <div>
-          <label for="email">Email Address <span aria-label="required">*</span></label>
+          <label for="email">Email Address <span aria-hidden="true">*</span></label>
           <input type="email" id="email" name="email" required size="51">
         </div>
         <div>
-          <label for="size">Size <span aria-label="required">*</span></label>
+          <label for="size">Size <span aria-hidden="true">*</span></label>
           <select id="size" name="size" required>
             <option value="" disabled selected>Select</option> <!-- prints text inside your dropdown menu for better UI -->
             <option value="XS">XS</option>
@@ -39,7 +39,7 @@
         <div>
           <fieldset>
           <legend>Select T-shirt color</legend>
-            Color options <span aria-label="required">*</span>
+            Color options <span aria-hidden="true">*</span>
     
             <input type="radio" id="color_black" name="color" value="black" required>
             <label for="color_black">Black</label>

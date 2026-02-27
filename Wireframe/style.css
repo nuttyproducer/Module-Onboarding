@@ -18,8 +18,7 @@ As well as useful links to learn more */
 ====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --color: blue; /* this adds to the color mix of --ink but effect is still practically not visible */
+  --ink: oklch(7 0 0); /* Pure black, matching --paper's lightness value */  --color: blue; /* this adds to the color mix of --ink */
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --link-space: clamp(3px, 3px + 1vw, 8px); /* Adds less padding to our link space */
@@ -28,21 +27,26 @@ As well as useful links to learn more */
   --footer-bg: oklch(15 0 0); 
   --footer-border: color-mix(in oklab, var(--color) 5%, black);
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
 }
+
 header {
   text-align: center;
 }
+
 a {
   padding: var(--link-space);
   border: var(--line);
   max-width: fit-content;
 }
+
 img,
 svg {
   width: 100%;
@@ -52,11 +56,12 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
-  
 }
+
 footer {
   position: fixed;
   bottom: 0;
